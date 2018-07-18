@@ -3,14 +3,20 @@
         <link href="styles.css" rel="stylesheet" type="text/css">
     </head>
     <body>
-        <h1> This website is awesome!</h1>
+        <main>
+            <h1> This website is awesome!</h1>
 
-        <h2>Choose an option:</h2>
-        <form action="/answers.php" method="GET">
-            <label><input type="radio" name="visitor-choice" value="Wow!">Wow!</label><br>
-            <label><input type="radio" name="visitor-choice" value="This website needs images!">This website needs images!</label><br>
-            <label><input type="radio" name="visitor-choice" value="This website needs more colour!">This website needs more colour!</label><br>
-            <button type="submit">Send Feedback</button>
-        </form>
+            <section id="main_poll">
+                <h2>Choose an option:</h2>
+                <div id="poll">
+                    <form action="/answers.php" method="GET">
+                        <label><input type="radio" name="visitor-choice" value="Wow!">Wow!</label><br>
+                        <label><input type="radio" name="visitor-choice" value="This website needs images!">This website needs images!</label><br>
+                        <label><input type="radio" name="visitor-choice" value="This website needs more colour!">This website needs more colour!</label><br>
+                        <button type="submit">Send Feedback</button>
+                    </form>
+                </div>
+            </section>
+        </main>
     </body>
 </html>
