@@ -3,8 +3,8 @@
     <head></head>
     <body>
         <?php
-            $to      = 'contact@caldertrombley.com';
-            $subject = 'Poll Result from caldertrombley.com';
+            $to      = 'email to send to';
+            $subject = 'Poll Result from (website)';
             $message = 'The visitor has selected: '.$_GET['visitor-choice'];
             $headers = 'From: webmaster@example.com' . "\r\n" .
                        'Reply-To: webmaster@example.com' . "\r\n" .
