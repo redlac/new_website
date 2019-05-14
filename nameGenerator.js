@@ -18,6 +18,7 @@ function getEndChars(consLength){
   return finalCons;
 
 document.getElementById("createName").onclick = function(){
+  console.log("test");
   let result = "";
   result = document.getElementById("firstL").innerHTML;
   result += getMiddleChars(2);
