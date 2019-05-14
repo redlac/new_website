@@ -29,7 +29,7 @@ document.getElementById("createName").onclick = function(){
   console.log(result);
   result += getMiddleChars(2);
   result += getMiddleChars(1);
-  result += getEndChars(2);
+  result += getEndChars(1);
   console.log(result);
   document.getElementById("result").innerHTML = result; 
 }
