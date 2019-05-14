@@ -21,6 +21,6 @@ button[type="submit"]{
 
 #nameGen{
  display: flex;
-  
+ justify-content: center;
 }
 
