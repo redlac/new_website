@@ -4,7 +4,7 @@ main{
     padding: 1em;
     border-radius: 5%;
     box-shadow: 5px 5px 5px black;
-    font-family: 'PT Serif',serif;
+    font-family: 'Arial', sans-serif;
 }
 
 h1, h2{
@@ -12,7 +12,7 @@ h1, h2{
 }
 
 label{
-    margin-right: 10px;
+    margin: auto 10px;
 }
 
 h1:hover{
