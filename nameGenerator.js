@@ -28,6 +28,7 @@ document.getElementById("createName").onclick = function(){
   result = document.getElementById("firstL").value.toUpperCase();
   console.log(result);
   result += getMiddleChars(2);
+  result += getMiddleChars(1);
   result += getEndChars(2);
   console.log(result);
   document.getElementById("result").innerHTML = result; 
