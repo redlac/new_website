@@ -57,7 +57,7 @@ document.getElementById("createFirstLastName").onclick = function(){
   resultFirst += getVowels(2);
   resultFirst += getVowels(1);
   resultFirst += getConsonants(1);
-  resultFirst += getVowels2);
+  resultFirst += getVowels(2);
   resultFirst += getVowels(1);
   resultFirst += getConsonants(1);
 
