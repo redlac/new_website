@@ -1,3 +1,4 @@
+console.log("start");
 function getMiddleChars(vowelLength){
   let vowels = ['a','e','i','o','u'];
   let finalVowels = "";
