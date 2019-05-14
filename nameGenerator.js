@@ -1,4 +1,5 @@
 console.log("start");
+
 function getMiddleChars(vowelLength){
   let vowels = ['a','e','i','o','u'];
   let finalVowels = "";
@@ -17,6 +18,7 @@ function getEndChars(consLength){
     finalCons += randCons;
   }
   return finalCons;
+}
 
 document.getElementById("createName").onclick = function(){
   console.log("test");
