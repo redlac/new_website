@@ -16,6 +16,12 @@ function getEndChars(consLength){
     finalCons += randCons;
   }
   return finalCons;
+
+document.getElementById("createName").onclick = function(){
+  let result = "";
+  result = document.getElementById("firstL").innerHTML;
+  result += getMiddleChars(2);
+  result += getEndChars(2);
+  document.getElementById("result").innnerHTML = result; 
 }
 
-let firstLetter = document.getElementById("
