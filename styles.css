@@ -11,6 +11,10 @@ h1, h2{
     text-align: center;
 }
 
+label{
+    margin-right: 10px;
+}
+
 h1:hover{
     text-transform: uppercase;
 }
@@ -24,3 +28,6 @@ button[type="submit"]{
  justify-content: center;
 }
 
+#firstL{
+ margin-right: 10px;
+}
