@@ -1,6 +1,6 @@
 console.log("start");
 
-function getMiddleChars(vowelLength){
+function getVowels(vowelLength){
   let vowels = ['a','e','i','o','u'];
   let finalVowels = "";
   for (let i = 0; i < vowelLength; i++){
@@ -11,7 +11,7 @@ function getMiddleChars(vowelLength){
   return finalVowels;
 }
 
-function getEndChars(consLength){
+function getConsonants(consLength){
   let consonants = ['b','c','d','f','g','h','j','k','l','m','n','p','q','r','s','t','v','w','x','y','z'];
   let finalCons = "";
   for (let i = 0; i < consLength; i++){
@@ -27,9 +27,9 @@ document.getElementById("createShortName").onclick = function(){
   let result = "";
   result = document.getElementById("firstL").value.toUpperCase();
   console.log(result);
-  result += getMiddleChars(2);
-  result += getMiddleChars(1);
-  result += getEndChars(1);
+  result += getVowels(2);
+  result += getVowels(1);
+  result += getConsonants(1);
   console.log(result);
   document.getElementById("result").innerHTML = result; 
 }
@@ -39,12 +39,12 @@ document.getElementById("createLongName").onclick = function(){
   let result = "";
   result = document.getElementById("firstL").value.toUpperCase();
   console.log(result);
-  result += getMiddleChars(2);
-  result += getMiddleChars(1);
-  result += getEndChars(1);
-  result += getMiddleChars(2);
-  result += getMiddleChars(1);
-  result += getEndChars(1);
+  result += getVowels(2);
+  result += getVowels(1);
+  result += getConsonants(1);
+  result += getVowels(2);
+  result += getConsonants(1);
+  result += getConsonants(1);
   console.log(result);
   document.getElementById("result").innerHTML = result; 
 }
@@ -54,21 +54,21 @@ document.getElementById("createFirstLastName").onclick = function(){
   let resultFirst = "";
   resultFirst = document.getElementById("firstL").value.toUpperCase();
   
-  resultFirst += getMiddleChars(2);
-  resultFirst += getMiddleChars(1);
-  resultFirst += getEndChars(1);
-  resultFirst += getMiddleChars(2);
-  resultFirst += getMiddleChars(1);
-  resultFirst += getEndChars(1);
+  resultFirst += getVowels(2);
+  resultFirst += getVowels(1);
+  resultFirst += getConsonants(1);
+  resultFirst += getVowels2);
+  resultFirst += getVowels(1);
+  resultFirst += getConsonants(1);
 
   let resultLast = "";
-  let firstL = getMiddleChars(2);
+  let firstL = getVowels(2);
   resultLast += firstL[0].toUpperCase() + firstL.substring(1);
-  resultLast += getMiddleChars(1);
-  resultLast += getEndChars(1);
-  resultLast += getMiddleChars(2);
-  resultLast += getMiddleChars(1);
-  resultLast += getEndChars(1);
+  resultLast += getVowels(1);
+  resultLast += getConsonants(1);
+  resultLast += getVowels(2);
+  resultLast += getVowels(1);
+  resultLast += getConsonants(1);
   
   let result = resultFirst + " " + resultLast;
   console.log(result);
