@@ -26,6 +26,7 @@ document.getElementById("createName").onclick = function(){
   result = document.getElementById("firstL").innerHTML;
   result += getMiddleChars(2);
   result += getEndChars(2);
-  document.getElementById("result").innnerHTML = result; 
+  console.log(result);
+  document.getElementById("result").innerHTML = result; 
 }
 
