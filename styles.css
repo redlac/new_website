@@ -19,8 +19,12 @@ h1:hover{
     text-transform: uppercase;
 }
 
+input[type="button"]{
+   margin: 10px auto;
+}
+
 button[type="submit"]{
-    margin: 10px auto;
+   margin: 0 10px
 }
 
 #nameGen{
