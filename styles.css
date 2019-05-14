@@ -1,5 +1,5 @@
 main{
-    width: 25%;
+    width: 80%;
     margin: auto;
     padding: 1em;
     border-radius: 5%;
@@ -19,12 +19,8 @@ button[type="submit"]{
     margin: 10px auto;
 }
 
-#main_poll{
-    width: 50%;
-    margin: 0 auto;
-}
-
 #nameGen{
  display: flex;
+  
 }
 
