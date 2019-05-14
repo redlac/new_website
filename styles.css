@@ -1,5 +1,4 @@
 main{
-  
     width: 25%;
     margin: auto;
     padding: 1em;
@@ -23,5 +22,9 @@ button[type="submit"]{
 #main_poll{
     width: 50%;
     margin: 0 auto;
+}
+
+#nameGen{
+ display: flex;
 }
 
