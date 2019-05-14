@@ -22,7 +22,7 @@ function getEndChars(consLength){
   return finalCons;
 }
 
-document.getElementById("createName").onclick = function(){
+document.getElementById("createShortName").onclick = function(){
   console.log("test");
   let result = "";
   result = document.getElementById("firstL").value.toUpperCase();
@@ -34,3 +34,17 @@ document.getElementById("createName").onclick = function(){
   document.getElementById("result").innerHTML = result; 
 }
 
+document.getElementById("createLongName").onclick = function(){
+  console.log("test");
+  let result = "";
+  result = document.getElementById("firstL").value.toUpperCase();
+  console.log(result);
+  result += getMiddleChars(2);
+  result += getMiddleChars(1);
+  result += getEndChars(1);
+  result += getMiddleChars(2);
+  result += getMiddleChars(1);
+  result += getEndChars(1);
+  console.log(result);
+  document.getElementById("result").innerHTML = result; 
+}
