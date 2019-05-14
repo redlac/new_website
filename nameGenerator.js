@@ -53,7 +53,7 @@ document.getElementById("createFirstLastName").onclick = function(){
   console.log("test");
   let resultFirst = "";
   resultFirst = document.getElementById("firstL").value.toUpperCase();
-  console.log(result);
+  
   resultFirst += getMiddleChars(2);
   resultFirst += getMiddleChars(1);
   resultFirst += getEndChars(1);
