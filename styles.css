@@ -31,3 +31,7 @@ button[type="submit"]{
 #firstL{
  margin-right: 10px;
 }
+
+#result{
+ margin: 0 auto;
+}
