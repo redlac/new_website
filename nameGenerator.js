@@ -78,7 +78,7 @@ document.getElementById("createFirstLastName").onclick = function(){
 document.getElementById("shuffleName").onclick = function(){
   if (document.getElementById("result")){
     let name = document.getElementById("result").innerHTML;
-    console.log(name);
+    console.log(name.length);
     let nameArray = name.split("");
     console.log(nameArray);
     let nameLength = name.length;
