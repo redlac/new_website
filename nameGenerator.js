@@ -80,9 +80,14 @@ document.getElementById("shuffleName").onclick = function(){
     let name = document.getElementById("result").innerHTML;
     let nameArray = name.split("");
     console.log(nameArray);
-    for (let i = 0; i < name.length; i++){
+    let nameLength = name.length;
+    let shuffledString = "";
+    for (let i = 0; i < nameLength; i++){
       let randIndex = Math.floor(Math.random() * ((name.length-1) - 0 + 1)) + 0;
       let randLetter = name[randIndex];
+      shuffledString = shuffledString += randLetter;
+      nameArray.splice(randIndex,1);
     }
+    console.log(shuffledString);
   }
 }
