@@ -87,7 +87,7 @@ document.getElementById("shuffleName").onclick = function(){
       console.log("NL" + nameLength);
       let randIndex = Math.floor(Math.random() * ((name.length-1) - 0 + 1)) + 0;
       let randLetter = name[randIndex];
-      shuffledName = shuffledName += randLetter;
+      shuffledName += randLetter;
       nameArray.splice(randIndex,1);
     }
     shuffledName = shuffledName[0].toUpperCase() + shuffledName.substring(1);
