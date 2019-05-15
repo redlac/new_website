@@ -84,6 +84,7 @@ document.getElementById("shuffleName").onclick = function(){
     let nameLength = name.length;
     let shuffledName = "";
     for (let i = 0; i < nameLength; i++){
+      console.log("NL" + nameLength);
       let randIndex = Math.floor(Math.random() * ((name.length-1) - 0 + 1)) + 0;
       let randLetter = name[randIndex];
       shuffledName = shuffledName += randLetter;
