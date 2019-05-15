@@ -90,7 +90,7 @@ document.getElementById("shuffleName").onclick = function(){
       shuffledName += randLetter;
       nameArray.splice(randIndex,1);
     }
-    shuffledName = shuffledName[0].toUpperCase() + shuffledName.substring(1);
+    shuffledName = shuffledName[0].toUpperCase() + shuffledName.substring(1).toLowerCase();
     console.log(shuffledName);
     document.getElementById("result").innerHTML = shuffledName;
   }
