@@ -90,6 +90,6 @@ document.getElementById("shuffleName").onclick = function(){
     }
     shuffledName = shuffledName[0].toUpperCase() + shuffledName.substring(1);
     console.log(shuffledName);
-    name = shuffledName;
+    document.getElementById("result").innerHTML = shuffledName;
   }
 }
