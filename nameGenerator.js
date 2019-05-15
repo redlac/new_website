@@ -81,13 +81,15 @@ document.getElementById("shuffleName").onclick = function(){
     let nameArray = name.split("");
     console.log(nameArray);
     let nameLength = name.length;
-    let shuffledString = "";
+    let shuffledName = "";
     for (let i = 0; i < nameLength; i++){
       let randIndex = Math.floor(Math.random() * ((name.length-1) - 0 + 1)) + 0;
       let randLetter = name[randIndex];
-      shuffledString = shuffledString += randLetter;
+      shuffledName = shuffledName += randLetter;
       nameArray.splice(randIndex,1);
     }
-    console.log(shuffledString);
+    shuffledName = shuffledName[0].toUpperCase() + shuffledName.substring(1);
+    console.log(shuffledName);
+    name = shuffledName;
   }
 }
