@@ -74,3 +74,15 @@ document.getElementById("createFirstLastName").onclick = function(){
   console.log(result);
   document.getElementById("result").innerHTML = result; 
 }
+
+document.getElementById("shuffleName").onclick = function(){
+  if (document.getElementById("result")){
+    let name = document.getElementById("result").value;
+    let nameArray = name.split(",");
+    console.log(nameArray);
+    for (let i = 0; i < name.length; i++){
+      let randIndex = Math.floor(Math.random() * ((name.length-1) - 0 + 1)) + 0;
+      let randLetter = name[randIndex];
+    }
+  }
+}
